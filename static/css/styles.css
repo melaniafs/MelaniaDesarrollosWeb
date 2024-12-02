@@ -1,0 +1,501 @@
+h1,
+h2 {
+    color: #2c003e;
+    /* Púrpura oscuro */
+}
+
+p {
+    color: #343a40;
+    /* Gris carbón */
+}
+
+.carousel-item img {
+    width: 80%;
+    height: auto;
+    max-height: 400px;
+    margin: auto;
+}
+
+footer {
+    background-color: #343a40;
+    /* Gris carbón */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #002366;
+    /* Azul oscuro */
+    border-color: #002366;
+}
+
+.btn-primary:hover {
+    background-color: #ff00ff;
+    /* Magenta */
+    border-color: #ff00ff;
+}
+
+.foto-personal {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+/* Estilo para el logo en la barra de navegación */
+.navbar-brand .logo {
+    height: 90px;
+    /* Ajusta este valor según sea necesario */
+    margin-right: 10px;
+}
+
+
+.navbar-nav .nav-link {
+    color: #555555;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-nav .nav-link i {
+    font-size: 1.2em;
+    color: #2c003e;
+    /* Violeta oscuro */
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link i:hover {
+    color: #ff00ff;
+    /* Magenta */
+}
+
+.main {
+    padding: 20px;
+}
+
+.social-icons a {
+    color: #343a40;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff00ff;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.p-footer {
+    color: #ffffff;
+}
+
+
+footer .social-icons a {
+    color: #ffffff;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #ff00ff;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-float i {
+    margin-top: 16px;
+    max-width: 100%;
+    /* Asegura que el icono no se salga del contenedor */
+    height: auto;
+    /* Mantiene la proporción del icono */
+}
+
+.services-section {
+    background-color: #ffffff;
+}
+
+.services-section h2,
+.services-section h3,
+.services-description h2,
+.services-description h3,
+.services-description h2 py-5 {
+    color: #2c003e;
+    /* Violeta oscuro */
+}
+
+.services-section .service-item,
+.services-description ul li {
+    color: #2c003e;
+    /* Violeta oscuro */
+}
+
+.services-section .service-item::before {
+    content: "\f101";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ff00ff;
+    /* Magenta */
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.services-description {
+    padding-top: 20px;
+}
+
+.services-description ul li {
+    margin-bottom: 10px;
+}
+
+.services-section p,
+.services-description p {
+    color: #343a40;
+    /* Gris carbón */
+}
+
+.service-item i {
+    color: #2c003e;
+    /* Violeta oscuro */
+}
+
+/* Asegurarse de que el contenedor de los iconos tiene un tamaño adecuado */
+.social-icons-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    /* Ajusta este valor según sea necesario */
+}
+
+/* Estilo para los iconos dentro del contenedor */
+.social-icons-contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    text-decoration: none !important;
+    /* Eliminar el subrayado de manera contundente */
+}
+
+/* Estilo para los iconos */
+.social-icons-contact i {
+    color: #2c003e;
+    /* Violeta oscuro */
+    transition: color 0.3s ease;
+}
+
+/* Estilo para el hover del icono */
+.social-icons-contact a:hover i {
+    color: #ff00ff;
+    /* Magenta */
+}
+
+
+
+/* Estilo para el logo en la barra de navegación */
+.navbar-brand .logo {
+    height: 90px;
+    /* Ajusta este valor según sea necesario */
+    margin-right: 10px;
+}
+
+/* Asegurarse de que los iconos de redes sociales se ocultan en dispositivos móviles y se muestran en pantallas grandes */
+.d-lg-none {
+    display: none !important;
+}
+
+@media (min-width: 992px) {
+    .d-lg-none {
+        display: none !important;
+    }
+
+    .d-lg-flex {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .d-lg-none {
+        display: block !important;
+    }
+
+    .d-lg-flex {
+        display: none !important;
+    }
+}
+
+/* Alinear correctamente todos los elementos a la derecha */
+.navbar-nav.ml-auto {
+    margin-left: auto;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para el fondo del menú desplegable de redes sociales */
+.navbar-light .navbar-nav .dropdown-menu {
+    background-color: #f8f9fa;
+    /* Ajusta este color al de tu barra de navegación */
+    border: none;
+    /* Eliminar el borde */
+    box-shadow: none;
+    /* Eliminar la sombra */
+}
+
+/* Estilo para la palabra cambiante */
+.dynamic-text {
+    font-size: 3em;
+    /* Tamaño grande */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.shining-word {
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    /* Fuente elegante */
+    background: linear-gradient(90deg, #2c003e, #ab47bc, #2c003e);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Estilo para el logo en la sección de bienvenida */
+.logo-section .center-logo {
+    max-width: 100%;
+    /* Asegura que el logo no se salga del contenedor */
+    height: 400px;
+    /* Ajusta este valor según sea necesario */
+    margin-bottom: 0;
+    /* Eliminar margen inferior */
+}
+
+/* Reducir espacio vertical en la sección del logo */
+.logo-section {
+    padding-top: 10px;
+    /* Ajusta este valor según sea necesario */
+    padding-bottom: 0;
+    /* Eliminar padding inferior */
+}
+
+/* Reducir espacio vertical en la sección de bienvenida */
+.welcome-section {
+    padding-top: 0;
+    /* Eliminar padding superior */
+    padding-bottom: 20px;
+    /* Ajusta este valor según sea necesario */
+    margin-top: 0;
+    /* Eliminar margen superior */
+}
+
+/* Estilos para la sección de noticias estilo periódico */
+.news-section {
+    background-color: #f8f9fa;
+    /* Fondo claro */
+    font-family: 'Times New Roman', serif;
+    /* Fuente estilo periódico */
+}
+
+.news-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    /* Borde suave para el estilo de recuadro */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    overflow: hidden;
+    /* Asegurarse de que el contenido no se salga del contenedor */
+    text-align: center;
+    /* Centrar texto */
+}
+
+.news-title {
+    font-size: 1.15em;
+    /* Tamaño del título */
+    font-weight: bold;
+    /* Título en negrita */
+    color: #343a40;
+    /* Color del texto del título */
+    text-transform: uppercase;
+    /* Transformar a mayúsculas para mayor impacto */
+    margin-bottom: 10px;
+    /* Espacio debajo del título */
+    white-space: normal;
+    /* Permitir que el texto haga ajuste automático */
+    overflow-wrap: break-word;
+    /* Permitir que las palabras se ajusten sin dividirse */
+}
+
+.news-text {
+    font-size: 1em;
+    /* Tamaño del texto */
+    color: #343a40;
+    /* Color del texto */
+}
+
+/* Estilo para el enlace atractivo */
+.btn-attractive-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: #3e0056;
+    /* Color violeta oscuro */
+    border: 2px solid #27002e;
+    /* Borde de color */
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-attractive-link:hover {
+    background-color: #b00069;
+    /* Color al pasar el mouse */
+    color: #ffffff;
+    /* Color del texto al pasar el mouse */
+    transform: scale(1.05);
+    /* Efecto de aumento al pasar el mouse */
+}
+
+
+/* SECCIÓN NOTICIAS ESTILO PERIODICO DEL INDEX */
+.news-section {
+    background-color: #f0f0f0;
+    /* Fondo gris claro */
+    padding: 20px 0;
+    /* Añadir espacio superior e inferior */
+}
+
+/* Contenedor Flexbox para igualar las alturas */
+.news-section .row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* Asegurarse de que las columnas ocupen más ancho */
+.news-section .col-12.col-md-4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    /* Espacio inferior */
+
+
+}
+
+/* Estilo para los cuadros de noticias */
+.news-item {
+
+    border: 1px solid #e0e0e0;
+    /* Borde suave */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    overflow: hidden;
+    /* Asegurarse de que el contenido no se salga del contenedor */
+    text-align: left;
+    /* Alinear texto a la izquierda */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 100%;
+    /* Asegurarse de que el contenedor ocupe todo el espacio disponible */
+    padding: 20px;
+    /* Asegurarse de que hay suficiente espacio interno */
+}
+
+/* Título de noticias */
+.news-title {
+    font-size: 1.25em;
+    /* Tamaño del título */
+    font-weight: bold;
+    /* Título en negrita */
+    color: #343a40;
+    /* Color del texto del título */
+    text-transform: uppercase;
+    /* Transformar a mayúsculas para mayor impacto */
+    margin-bottom: 10px;
+    /* Espacio debajo del título */
+    text-align: center;
+    /* Asegurar que el texto esté centrado */
+    word-wrap: break-word;
+    /* Permitir que las palabras se ajusten dentro del contenedor */
+}
+
+/* Ícono de noticias */
+.news-title i {
+    margin-bottom: 5px;
+    /* Espacio entre el ícono y el texto */
+}
+
+/* Texto de noticias */
+.news-text {
+    font-size: 1em;
+    /* Tamaño del texto */
+    color: #343a40;
+    /* Color del texto */
+    margin-bottom: 15px;
+    /* Espacio debajo del texto */
+    text-align: justify;
+    /* Justificar el texto */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 767.98px) {
+    .news-section .col-12.col-md-4 {
+        flex: 0 0 100%;
+        /* Las columnas ocupan el 100% del ancho en dispositivos móviles */
+        max-width: 100%;
+    }
+}

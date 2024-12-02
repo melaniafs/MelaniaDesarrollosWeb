@@ -1,0 +1,8 @@
+/* Aplicar un fondo gris claro con una imagen suave a todo el cuerpo de la página */
+body {
+    background-color: #f0f0f0; /* Gris claro */
+    background-image: url('../static/images/Logo_A.png'); /* Reemplaza con la ruta a tu imagen */
+    background-repeat: repeat; /* No repetir la imagen */
+    background-attachment: fixed; /* Fondo fijo al hacer scroll */
+    background-blend-mode: lighten; /* Mezcla la imagen con el color de fondo */
+}

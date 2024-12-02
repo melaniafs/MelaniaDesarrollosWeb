@@ -1,0 +1,51 @@
+/* Estilo para los íconos en los títulos */
+h2 i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    color: #2c003e; /* Violeta oscuro */
+    transition: color 0.3s ease;
+}
+
+/* Estilo para el hover de los íconos en los títulos */
+h2:hover i {
+    color: #ff00ff; /* Magenta */
+}
+
+/* Asegurarse de que el contenedor de los iconos tiene un tamaño adecuado */
+.social-icons-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Ajusta este valor según sea necesario */
+}
+
+/* Estilo para los iconos dentro del contenedor */
+.social-icons-contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    text-decoration: none !important; /* Eliminar el subrayado */
+}
+
+/* Estilo para los iconos */
+.social-icons-contact i {
+    color: #2c003e; /* Violeta oscuro */
+    transition: color 0.3s ease;
+}
+
+/* Estilo para el hover del icono */
+.social-icons-contact a:hover i {
+    color: #0d00ff; /* Magenta */
+}
+
+/* Estilo para el enlace de WhatsApp */
+a {
+    color: #2c003e; /* Violeta oscuro */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #13c65a; /* Magenta */
+}
+

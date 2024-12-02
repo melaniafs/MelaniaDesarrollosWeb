@@ -1,0 +1,30 @@
+/* Estilos para la sección de noticias estilo periódico */
+.news-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; /* Borde suave para el estilo de recuadro */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    overflow: hidden; /* Asegurarse de que el contenido no se salga del contenedor */
+    text-align: left; /* Alinear texto a la izquierda */
+    margin-bottom: 20px; /* Espacio inferior */
+    padding: 20px; /* Relleno interno */
+}
+
+.news-title {
+    font-size: 1.5em; /* Tamaño del título */
+    font-weight: bold; /* Título en negrita */
+    color: #343a40; /* Color del texto del título */
+    text-transform: uppercase; /* Transformar a mayúsculas para mayor impacto */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    display: flex;
+    align-items: center;
+}
+
+.news-title i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.news-text {
+    font-size: 1em; /* Tamaño del texto */
+    color: #343a40; /* Color del texto */
+    margin-bottom: 15px; /* Espacio debajo del texto */
+}
