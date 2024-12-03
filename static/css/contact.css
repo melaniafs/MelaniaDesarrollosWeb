@@ -46,6 +46,23 @@ a {
 }
 
 a:hover {
-    color: #13c65a; /* Magenta */
+    color: #00ff11; /* Magenta */
 }
+
+/*DESLIZAMIENTO DE SECCIONES*/
+/* Estilos para las secciones */
+.slide-in {
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateX(-100%); /* Posicionar fuera del viewport */
+    transition: all 1s ease-out; /* Transición suave */
+}
+
+/* Clase para hacer la animación */
+.section-visible {
+    opacity: 1; /* Hacer visible */
+    transform: translateX(0); /* Volver a la posición original */
+}
+
+
+
 
