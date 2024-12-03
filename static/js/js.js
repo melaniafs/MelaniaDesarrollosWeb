@@ -1,3 +1,4 @@
+//loader del inicio
 document.addEventListener("DOMContentLoaded", function() { 
     var preloader = document.querySelector('.preloader'); 
     window.addEventListener('load', function() { 
@@ -5,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }); 
 });
 
+//cambio de palabras
 document.addEventListener("DOMContentLoaded", function() {
     var words = ["INFORMATIVA", "ÚNICA", "ATRACTIVA", "DESTACADA"];
     var index = 0;
