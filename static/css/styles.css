@@ -9,12 +9,63 @@ p {
     /* Gris carbón */
 }
 
+/*CARRUSEL*/
+/*
 .carousel-item img {
     width: 80%;
     height: auto;
     max-height: 400px;
     margin: auto;
 }
+*/
+/* Ajustes para el carrusel */
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Ajustar la altura restando un valor fijo */
+    min-height: 300px; /* Establecer una altura mínima */
+}
+
+/* Ajustes para las imágenes del carrusel */
+.carousel-item img {
+    width: 80%;
+    height: auto;
+    max-height: 100%; /* Ajustar para que la imagen no sobrepase el contenedor */
+    margin: auto;
+    object-fit: cover; /* Cubre el contenedor manteniendo la proporción */
+}
+/*Ajuste para que el logo esté mas pegado al carrusel*/
+.section-logo {
+    padding-top: 0;
+    margin-top: -150px; /* Reduce el espacio entre el carrusel y la siguiente sección */
+}
+
+/* Ajustes específicos para dispositivos móviles */
+@media (max-width: 767.98px) {
+    .carousel-item {
+        height: auto; /* Ajustar la altura para dispositivos móviles */
+        min-height: 60vh; /* Establecer una altura mínima para dispositivos móviles */
+    }
+
+    .carousel-item img {
+        width: 100%; /* La imagen ocupa todo el ancho del contenedor en dispositivos móviles */
+        height: auto;
+        max-height: 60vh; /* Ajustar la altura máxima en dispositivos móviles */
+    }
+    .section-logo {
+        padding-top: 0;
+        margin-top: -390px; /* Reduce el espacio entre el carrusel y la siguiente sección */
+    }
+   
+}
+
+/* Ajuste del relleno y márgenes del resto de la página */
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
 
 footer {
     background-color: #343a40;
@@ -60,6 +111,8 @@ header {
     padding: 10px;
 }
 
+/*NAVEGACIÓN*/
+
 /* Estilo para el logo en la barra de navegación */
 .navbar-brand .logo {
     height: 90px;
@@ -103,98 +156,6 @@ header {
     color: #ff00ff;
 }
 
-footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-}
-
-.p-footer {
-    color: #ffffff;
-}
-
-
-footer .social-icons a {
-    color: #ffffff;
-    font-size: 1.5em;
-    transition: color 0.3s;
-}
-
-footer .social-icons a:hover {
-    color: #ff00ff;
-}
-
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-}
-
-.whatsapp-float i {
-    margin-top: 16px;
-    max-width: 100%;
-    /* Asegura que el icono no se salga del contenedor */
-    height: auto;
-    /* Mantiene la proporción del icono */
-}
-
-.services-section {
-    background-color: #ffffff;
-}
-
-.services-section h2,
-.services-section h3,
-.services-description h2,
-.services-description h3,
-.services-description h2 py-5 {
-    color: #2c003e;
-    /* Violeta oscuro */
-}
-
-.services-section .service-item,
-.services-description ul li {
-    color: #2c003e;
-    /* Violeta oscuro */
-}
-
-.services-section .service-item::before {
-    content: "\f101";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: #ff00ff;
-    /* Magenta */
-    font-size: 1.2em;
-    margin-right: 10px;
-}
-
-.services-description {
-    padding-top: 20px;
-}
-
-.services-description ul li {
-    margin-bottom: 10px;
-}
-
-.services-section p,
-.services-description p {
-    color: #343a40;
-    /* Gris carbón */
-}
-
-.service-item i {
-    color: #2c003e;
-    /* Violeta oscuro */
-}
 
 /* Asegurarse de que el contenedor de los iconos tiene un tamaño adecuado */
 .social-icons-contact {
@@ -241,7 +202,7 @@ footer .social-icons a:hover {
 .d-lg-none {
     display: none !important;
 }
-
+/* 992px */
 @media (min-width: 992px) {
     .d-lg-none {
         display: none !important;
@@ -272,7 +233,7 @@ footer .social-icons a:hover {
     align-items: center;
 }
 
-/* Estilo para el fondo del menú desplegable de redes sociales */
+/* HAMBURGUESA: Estilo para el fondo del menú desplegable de redes sociales */
 .navbar-light .navbar-nav .dropdown-menu {
     background-color: #f8f9fa;
     /* Ajusta este color al de tu barra de navegación */
@@ -281,7 +242,47 @@ footer .social-icons a:hover {
     box-shadow: none;
     /* Eliminar la sombra */
 }
+/*FOOTER*/
 
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.p-footer {
+    color: #ffffff;
+}
+
+
+footer .social-icons a {
+    color: #ffffff;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #ff00ff;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+
+/*INDEX PALABRA CAMBIANTE*/
 /* Estilo para la palabra cambiante */
 .dynamic-text {
     font-size: 3em;
@@ -383,7 +384,7 @@ footer .social-icons a:hover {
     /* Color del texto */
 }
 
-/* Estilo para el enlace atractivo */
+/* Estilo para el enlace atractivo del botón ir a mis servicios */
 .btn-attractive-link {
     display: inline-block;
     padding: 10px 20px;
@@ -499,3 +500,4 @@ footer .social-icons a:hover {
         max-width: 100%;
     }
 }
+

@@ -16,3 +16,11 @@
 .whatsapp-float i {
     margin-top: 16px;
 }
+
+.whatsapp-float i {
+    margin-top: 16px;
+    max-width: 100%;
+    /* Asegura que el icono no se salga del contenedor */
+    height: auto;
+    /* Mantiene la proporción del icono */
+}

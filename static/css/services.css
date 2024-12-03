@@ -1,3 +1,52 @@
+
+.services-section {
+    background-color: #ffffff;
+}
+
+.services-section h2,
+.services-section h3,
+.services-description h2,
+.services-description h3,
+.services-description h2 py-5 {
+    color: #2c003e;
+    /* Violeta oscuro */
+}
+
+.services-section .service-item,
+.services-description ul li {
+    color: #2c003e;
+    /* Violeta oscuro */
+}
+
+.services-section .service-item::before {
+    content: "\f101";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ff00ff;
+    /* Magenta */
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.services-description {
+    padding-top: 20px;
+}
+
+.services-description ul li {
+    margin-bottom: 10px;
+}
+
+.services-section p,
+.services-description p {
+    color: #343a40;
+    /* Gris carbón */
+}
+
+.service-item i {
+    color: #2c003e;
+    /* Violeta oscuro */
+}
+
 /* Estilos para la sección de noticias estilo periódico */
 .news-item {
     background-color: #ffffff;
