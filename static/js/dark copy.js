@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
     // Función para animar las secciones
     function animateSections() {
@@ -22,20 +24,10 @@ $(document).ready(function() {
         animateSections();
     });
 
-    // Función para actualizar el texto del interruptor
-    function updateToggleText() {
-        if ($('body').hasClass('dark-mode')) {
-            $('label[for="toggle-theme"]').text('Modo Claro');
-        } else {
-            $('label[for="toggle-theme"]').text('Modo Oscuro');
-        }
-    }
-
     // Aplicar el modo oscuro si estaba previamente activado
     if (localStorage.getItem('darkMode') === 'enabled') {
         $('body').addClass('dark-mode');
         $('#toggle-theme').prop('checked', true);
-        updateToggleText();
     }
 
     // Cambiar entre modos claro y oscuro
@@ -47,11 +39,8 @@ $(document).ready(function() {
             $('body').removeClass('dark-mode');
             localStorage.setItem('darkMode', 'disabled');
         }
-        updateToggleText();
     });
 });
-
-
 
 
 

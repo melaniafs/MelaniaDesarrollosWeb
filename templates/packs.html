@@ -17,7 +17,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../static/css/contact.css">
     <link rel="stylesheet" href="../static/css/whatsapp.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/js/slider.js"></script>
+    <script src="../static/js/dark.js"></script>
+    <link rel="stylesheet" href="../static/css/dark.css">
+    <script src="../static/js/packs.js"></script>
+    <link rel="stylesheet" href="../static/css/packs.css">
 </head>
 
 <body>
@@ -42,9 +47,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Servicios</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portafolio</a>
-                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="packs.html">Paquetes</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contacto</a>
                     </li>
@@ -67,6 +72,14 @@
                                 <i class="fab fa-instagram mr-2"></i>Instagram
                             </a>
                         </div>
+                    </li>
+                     <!-- Interruptor de Modo Oscuro -->
+                     <li class="nav-item">
+                        <label class="switch">
+                            <input type="checkbox" id="toggle-theme">
+                            <span class="slider round"></span>
+                        </label>
+                        <label for="toggle-theme">Modo Oscuro</label>
                     </li>
                 </ul>
                 <ul class="navbar-nav d-none d-lg-flex social-icons">
@@ -95,26 +108,80 @@
         </nav>
     </header>
     <main class="container my-5">
-        <h1 class="text-center">Contactame</h1>
-        <p class="text-center">Estoy disponible para discutir cómo puedo ayudarte con tus necesidades tecnológicas.
-            Podés contactarme a través de las siguientes redes sociales, correo electrónico, o enviando un mensaje
-            directo a mi WhatsApp.</p>
-        <div class="row">
-            <div class="col-md-6 offset-md-3 text-center">
-                <h2><i class="fas fa-share-alt"></i> Redes Sociales</h2>
-                <div class="social-icons-contact">
-                    <a href="https://www.linkedin.com/in/melania-fernandez-suarez-569051221?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                        target="_blank" class="mx-2">
-                        <i class="fab fa-linkedin fa-2x contact"></i>
-                    </a>
+        <section id="paquetes" class="container my-5">
+            <h2 class="text-center mb-4">Paquetes y Precios</h2>
+            <div class="row">
+                <!-- Paquete Básico -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center bg-primary text-white">
+                            Paquete Básico
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">USD 19.99 / mes</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Landing Page</li>
+                                <li class="list-group-item">Diseño atractivo y profesional</li>
+                                <li class="list-group-item">Optimización SEO básica</li>
+                                <li class="list-group-item">Formulario de contacto</li>
+                                <li class="list-group-item">Integración con redes sociales</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="mt-4"><i class="fas fa-envelope"></i> Correo Electrónico</h2>
-                <p><a href="mailto:melfernandezsuarez@gmail.com">melfernandezsuarez@gmail.com</a></p>
-                <h2 class="mt-4"><i class="fab fa-whatsapp"></i> WhatsApp</h2>
-                <p><a href="https://wa.me/5491140267429" target="_blank">+54 9 11 4026-7429</a></p>
+                <!-- Paquete Avanzado -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center bg-success text-white">
+                            Paquete Avanzado
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">USD 39.99 / mes</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Página Web Institucional</li>
+                                <li class="list-group-item">Múltiples secciones (Inicio, Sobre Nosotros, Servicios, Contacto)</li>
+                                <li class="list-group-item">Diseño responsivo</li>
+                                <li class="list-group-item">Optimización SEO avanzada</li>
+                                <li class="list-group-item">Galería de imágenes</li>
+                                <li class="list-group-item">Integración con Google Analytics</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-success">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Paquete Premium -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center bg-danger text-white">
+                            Paquete Premium
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">USD 59.99 / mes</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Página Web Autogestionable</li>
+                                <li class="list-group-item">Panel de administración para gestionar contenido</li>
+                                <li class="list-group-item">Blog integrado</li>
+                                <li class="list-group-item">Diseño personalizado</li>
+                                <li class="list-group-item">Optimización SEO premium</li>
+                                <li class="list-group-item">Soporte y mantenimiento</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-danger">Comprar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        
     </main>
+
+
     <a href="https://wa.me/5491140267429?text=Hola!%20estoy%20interesado%20en%20los%20servicios%20de%20diseño%20de%20páginas%20web"
         class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
