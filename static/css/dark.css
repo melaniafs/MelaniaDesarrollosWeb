@@ -1,0 +1,132 @@
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+   color: #ffffff;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode a {
+    color: #bb86fc;
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+    color: #da84f9;
+}
+
+body.dark-mode .foto-personal {
+    border: 3px solid #bb86fc;
+    border-radius: 50%;
+}
+
+.dark-mode p {
+    color:#ccc
+}
+/* Estilos específicos para listas dentro de secciones en modo oscuro */ 
+body.dark-mode section li { 
+    color: #ffffff; /* Cambia el color del texto de los ítems de lista a blanco */
+}
+.dark-mode li {
+    color:#ccc
+}
+.dark-mode .service-item, li {
+    color: #ccc;
+}
+.dark-mode .news-item {
+    background-color: #121212;
+}
+.dark-mode .btn-attractive-link {
+    background-color: #d6bbf7;
+    color:#1e1e1e
+}
+/* Estilos para el interruptor */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    vertical-align: middle; /* Alinear verticalmente */
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height:16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #320053;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode a {
+    color: #bb86fc;
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+    color: #ffffff;
+}
+
+body.dark-mode .foto-personal {
+    border: 3px solid #bb86fc;
+    border-radius: 50%;
+}
+
+
+/* Alinear verticalmente el texto del interruptor */
+.nav-item label[for="toggle-theme"] {
+    margin-left: 10px;
+    vertical-align: middle; /* Alinear verticalmente */
+}
+
+/* Eliminar el punto del ítem de lista */
+.nav-item {
+    list-style-type: none; /* Elimina el estilo de lista (el punto) */
+    display: flex; /* Alinea el contenido horizontalmente */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+/* Mantener el ícono de WhatsApp verde y blanco en modo oscuro */
+body.dark-mode .whatsapp-float {
+    background-color: #25d366;
+    color: #ffffff;
+}

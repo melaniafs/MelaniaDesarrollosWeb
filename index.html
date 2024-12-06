@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="./static/css/fondo.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./static/js/slider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./static/js/dark.js"></script>
+    <link rel="stylesheet" href="./static/css/dark.css">
 </head>
 
 <body>
@@ -45,7 +48,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./templates/services.html">Servicios</a>
                     </li>
-                   <!--   <li class="nav-item">
+                    <!--   <li class="nav-item">
                         <a class="nav-link" href="./templates/portfolio.html">Portafolio</a>
                     </li> -->
                     <li class="nav-item">
@@ -58,7 +61,7 @@
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </li>
-                   <!-- <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="https://www.twitter.com/" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
@@ -73,6 +76,14 @@
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>-->
+                    <!-- Interruptor de Modo Oscuro -->
+                    <li class="nav-item">
+                        <label class="switch">
+                            <input type="checkbox" id="toggle-theme">
+                            <span class="slider round"></span>
+                        </label>
+                        <label for="toggle-theme">Modo Oscuro</label>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -97,14 +108,15 @@
             </a>
         </div>
         <section class="section-logo">
-        <div class="logo-section text-center py-5"> <img src="./static/images/Amen.gif" alt="Logo" class="center-logo">
-        </div>
-    </section>
+            <div class="logo-section text-center py-5"> <img src="./static/images/Amen.gif" alt="Logo"
+                    class="center-logo">
+            </div>
+        </section>
         <!-- Nueva Sección de Bienvenida -->
         <section class="welcome-section text-center py-5">
             <div class="container">
                 <h2>¡Dale a tu marca la presencia online que merece!</h2>
-                <p>Hola, somos <strong style="color: #2c003e ;">Melania Desarrollos Web</strong>,
+                <p>Hola, somos <strong>Melania Desarrollos Web</strong>,
                     y nos dedicamos a desarrollar páginas web informativas elegantes,
                     únicas y diseñadas para destacar. Nuestro objetivo es que tu negocio
                     tenga una presencia profesional y atractiva en línea,
@@ -123,7 +135,7 @@
                             <div class="col-12 col-md-4 mb-4">
                                 <div class="news-item p-3 border">
                                     <h4 class="news-title">
-                                        <i class="fas fa-paint-brush"></i><br>  Diseño Personalizado
+                                        <i class="fas fa-paint-brush"></i><br> Diseño Personalizado
                                     </h4>
                                     <p class="news-text">Cada página que creo está hecha a medida, adaptándose
                                         perfectamente a la identidad de tu marca.</p>
@@ -134,7 +146,8 @@
                                     <h4 class="news-title">
                                         <i class="fas fa-calendar-alt"></i> <br> Funcionalidad garantizada
                                     </h4>
-                                    <p class="news-text">Tu página siempre estará disponible, los 365 días del año, funcionando sin
+                                    <p class="news-text">Tu página siempre estará disponible, los 365 días del año,
+                                        funcionando sin
                                         interrupciones, para que tu negocio nunca deje de comunicar.</p>
                                 </div>
                             </div>
